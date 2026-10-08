@@ -1,0 +1,176 @@
+/* =========================
+   USER LIST TABLE
+   ========================= */
+
+.user-list-card {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.user-list-card .card-body {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* This is the important part */
+.table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-wrapper table {
+    width: 100%;
+    min-width: 850px;
+    margin-bottom: 0;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+    white-space: nowrap;
+    padding: 9px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin: 0 auto !important;
+    }
+
+    /* Form card */
+    .card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Email + Password */
+    .row {
+        display: block;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    /* =========================
+       USER LIST CARD
+       ========================= */
+
+    .user-list-card {
+        width: 100%;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .user-list-card .card-body {
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    /* Remove horizontal scrolling */
+    .table-responsive {
+        width: 100%;
+        overflow: hidden !important;
+    }
+
+    /* =========================
+       BREAK TABLE INTO BLOCKS
+       ========================= */
+
+    .table {
+        width: 100% !important;
+        display: block;
+        margin: 0;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .table tbody tr {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: white;
+    }
+
+    .table tbody td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 8px 5px;
+        text-align: left !important;
+        white-space: normal !important;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .table tbody td:last-child {
+        border-bottom: none;
+    }
+
+    /* Field name */
+    .table tbody td::before {
+        display: inline-block;
+        width: 90px;
+        font-weight: bold;
+        color: #222;
+    }
+
+    .table tbody td:nth-child(1)::before {
+        content: "ID:";
+    }
+
+    .table tbody td:nth-child(2)::before {
+        content: "Name:";
+    }
+
+    .table tbody td:nth-child(3)::before {
+        content: "Email:";
+    }
+
+    .table tbody td:nth-child(4)::before {
+        content: "Password:";
+    }
+
+    .table tbody td:nth-child(5)::before {
+        content: "City:";
+    }
+
+    .table tbody td:nth-child(6)::before {
+        content: "Gender:";
+    }
+
+    .table tbody td:nth-child(7)::before {
+        content: "Action:";
+    }
+}
